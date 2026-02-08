@@ -30,7 +30,7 @@ export default async function handler(req, res) {
 
   try {
     // Get access token
-    const authResponse = await fetch(`${process.env.VERCEL_URL || 'http://localhost:3000'}/api/auth`, {
+    const authResponse = await fetch('https://eason-stays-backend.vercel.app/api/auth', {
       method: 'POST',
     });
     
